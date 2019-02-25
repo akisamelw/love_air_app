@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:fitsSystemWindows="true">
+
+    <!--可折叠标题栏-->
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+        <ImageView
+            android:id="@+id/show_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/donghu"
+            app:layout_collapseMode="parallax" />
+    </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+     <android.support.v4.widget.NestedScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+         <LinearLayout
+
+         android:id="@+id/now_data"
+         android:layout_width="match_parent"
+         android:layout_height="400dp"
+         android:layout_marginTop="10dp"
+         android:background="@color/colorPrimary"
+         android:orientation="vertical"
+         android:padding="20dp">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="当前数据"
+             android:textColor="@color/colorTextTitle"
+             android:textSize="20sp" />
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="1sp"
+             android:layout_margin="5dp"
+             android:background="@color/colorLine" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+             <include layout="@layout/homedata" />
+
+         </LinearLayout>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="1sp"
+                 android:layout_margin="5dp"
+                 android:background="@color/colorLine" />
+
+
+
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="1sp"
+                 android:layout_margin="5dp"
+                 android:background="@color/colorLine" />
+     </LinearLayout>
+
+
+     </android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
