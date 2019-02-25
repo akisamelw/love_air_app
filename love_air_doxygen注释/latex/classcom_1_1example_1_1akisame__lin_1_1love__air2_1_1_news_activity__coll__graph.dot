@@ -1,0 +1,27 @@
+digraph "com.example.akisame_lin.love_air2.NewsActivity"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="com.example.akisame\l_lin.love_air2.NewsActivity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="com.example.akisame\l_lin.love_air2.Bean.BaseActivity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_base_activity.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="AppCompatActivity",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="OnClickListener",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" newsList" ];
+  Node8 [label="List\< com.example.akisame\l_lin.love_air2.Bean.News \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" adapter" ];
+  Node9 [label="com.example.akisame\l_lin.love_air2.presenter.News\lAdapter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_news_adapter.html",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="RecyclerView::Adapter\l\< NewsAdapter.ViewHolder \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" newsList" ];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" handler" ];
+  Node11 [label="Handler",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" back" ];
+  Node12 [label="ImageView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" recyclerView" ];
+  Node13 [label="RecyclerView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,30 @@
+digraph "com.coolweather.android.gson.Weather"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="com.coolweather.android.gson.\lWeather",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" forecastList" ];
+  Node2 [label="List\< com.coolweather.android.gson.\lForecast \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" suggestion" ];
+  Node3 [label="com.coolweather.android.gson.\lSuggestion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_suggestion.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" carWash" ];
+  Node4 [label="com.coolweather.android.gson.\lSuggestion.CarWash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_suggestion_1_1_car_wash.html",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" comfort" ];
+  Node5 [label="com.coolweather.android.gson.\lSuggestion.Comfort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_suggestion_1_1_comfort.html",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sport" ];
+  Node6 [label="com.coolweather.android.gson.\lSuggestion.Sport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_suggestion_1_1_sport.html",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" now" ];
+  Node7 [label="com.coolweather.android.gson.Now",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_now.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" more" ];
+  Node8 [label="com.coolweather.android.gson.\lNow.More",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_now_1_1_more.html",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" basic" ];
+  Node9 [label="com.coolweather.android.gson.\lBasic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_basic.html",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" update" ];
+  Node10 [label="com.coolweather.android.gson.\lBasic.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_basic_1_1_update.html",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" aqi" ];
+  Node11 [label="com.coolweather.android.gson.AQI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_a_q_i.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" city" ];
+  Node12 [label="com.coolweather.android.gson.\lAQI.AQICity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1gson_1_1_a_q_i_1_1_a_q_i_city.html",tooltip=" "];
+}

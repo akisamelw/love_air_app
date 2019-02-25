@@ -1,0 +1,228 @@
+\hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment}{}\section{com.\+coolweather.\+android.\+Choose\+Area\+Fragment类 参考}
+\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment}\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+
+
+类 com.\+coolweather.\+android.\+Choose\+Area\+Fragment 继承关系图\+:
+% FIG 0
+
+
+com.\+coolweather.\+android.\+Choose\+Area\+Fragment 的协作图\+:
+% FIG 1
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a149b6107fda6398c7bd384dc8bf6a82e}{on\+Create\+View}} (Layout\+Inflater inflater, View\+Group container, Bundle saved\+Instance\+State)
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a28b6311e1a398c4a58903f8c4496421b}{on\+Activity\+Created}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a66ee5311e742d5d2ca4e8c1a758329ab}{L\+E\+V\+E\+L\+\_\+\+P\+R\+O\+V\+I\+N\+CE}} = 0
+\item 
+static final int \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a78fb834372e8994dbb0d16e8c94a6308}{L\+E\+V\+E\+L\+\_\+\+C\+I\+TY}} = 1
+\item 
+static final int \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a68c457edf97def5452126ab2b477a868}{L\+E\+V\+E\+L\+\_\+\+C\+O\+U\+N\+TY}} = 2
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a0ee38893d16241daca693c23b69559b6}{query\+Provinces}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a20c7c2d306cf57e27d4f1a50ed21a5ed}{query\+Cities}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a6fbbc84afd33c1333964b3b19e612287}{query\+Counties}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a50f86f23ad235cb73c67f72a93ad83f6}{query\+From\+Server}} (String address, final String type)
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a0d4ca8410de580c3d0adf96de11b2ef3}{show\+Progress\+Dialog}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_aa45ad34cd54227398a68f7ed621f4a04}{close\+Progress\+Dialog}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+Progress\+Dialog \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a9c8eef8f0a9679d2f47b949948194898}{progress\+Dialog}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a4fe7f2ed551b0073ffc47fdb4240e0d3}{title\+Text}}
+\item 
+Button \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a15b4b85193b711fbddce9ac7eaf18be3}{back\+Button}}
+\item 
+List\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a0da8e7c5868167ae97ada658d39ec237}{list\+View}}
+\item 
+Array\+Adapter$<$ String $>$ \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a37edbcf9db886cd37c85bda9b23fa57b}{adapter}}
+\item 
+List$<$ String $>$ \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a05c2401633a4d636752f9af6ea221136}{data\+List}} = new Array\+List$<$$>$()
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_province}{Province}} $>$ \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_ad7b08d77b14fb25b0c0e35a9148ca516}{province\+List}}
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_city}{City}} $>$ \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_afcbbedc93ddc3a808a891975d1a0b68f}{city\+List}}
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_county}{County}} $>$ \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_abb46d98c9944df77a8e9367dd78a9362}{county\+List}}
+\item 
+\mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_province}{Province}} \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a805001c528f6aa8effcd2194f06dc2bf}{selected\+Province}}
+\item 
+\mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_city}{City}} \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_aafd3927de25ad3c93d1f69f100863698}{selected\+City}}
+\item 
+int \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_ab986cbd98e95c65312e08f2f1d25a79d}{current\+Level}}
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a9c4686ff93e514df2f56ddcd33d5532a}{T\+AG}} = \char`\"{}Choose\+Area\+Fragment\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_aa45ad34cd54227398a68f7ed621f4a04}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_aa45ad34cd54227398a68f7ed621f4a04}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!closeProgressDialog@{closeProgressDialog}}
+\index{closeProgressDialog@{closeProgressDialog}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{closeProgressDialog()}{closeProgressDialog()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+close\+Progress\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+关闭进度对话框 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a28b6311e1a398c4a58903f8c4496421b}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a28b6311e1a398c4a58903f8c4496421b}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!onActivityCreated@{onActivityCreated}}
+\index{onActivityCreated@{onActivityCreated}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{onActivityCreated()}{onActivityCreated()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+on\+Activity\+Created (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a149b6107fda6398c7bd384dc8bf6a82e}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a149b6107fda6398c7bd384dc8bf6a82e}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!onCreateView@{onCreateView}}
+\index{onCreateView@{onCreateView}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{onCreateView()}{onCreateView()}}
+{\footnotesize\ttfamily View com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+on\+Create\+View (\begin{DoxyParamCaption}\item[{Layout\+Inflater}]{inflater,  }\item[{View\+Group}]{container,  }\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a20c7c2d306cf57e27d4f1a50ed21a5ed}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a20c7c2d306cf57e27d4f1a50ed21a5ed}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!queryCities@{queryCities}}
+\index{queryCities@{queryCities}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{queryCities()}{queryCities()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+query\+Cities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+查询选中省内所有的市，优先从数据库查询，如果没有查询到再去服务器上查询。 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a6fbbc84afd33c1333964b3b19e612287}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a6fbbc84afd33c1333964b3b19e612287}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!queryCounties@{queryCounties}}
+\index{queryCounties@{queryCounties}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{queryCounties()}{queryCounties()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+query\+Counties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+查询选中市内所有的县，优先从数据库查询，如果没有查询到再去服务器上查询。 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a50f86f23ad235cb73c67f72a93ad83f6}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a50f86f23ad235cb73c67f72a93ad83f6}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!queryFromServer@{queryFromServer}}
+\index{queryFromServer@{queryFromServer}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{queryFromServer()}{queryFromServer()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+query\+From\+Server (\begin{DoxyParamCaption}\item[{String}]{address,  }\item[{final String}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+根据传入的地址和类型从服务器上查询省市县数据。 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a0ee38893d16241daca693c23b69559b6}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a0ee38893d16241daca693c23b69559b6}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!queryProvinces@{queryProvinces}}
+\index{queryProvinces@{queryProvinces}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{queryProvinces()}{queryProvinces()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+query\+Provinces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+查询全国所有的省，优先从数据库查询，如果没有查询到再去服务器上查询。 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a0d4ca8410de580c3d0adf96de11b2ef3}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a0d4ca8410de580c3d0adf96de11b2ef3}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!showProgressDialog@{showProgressDialog}}
+\index{showProgressDialog@{showProgressDialog}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{showProgressDialog()}{showProgressDialog()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+show\+Progress\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+显示进度对话框 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a37edbcf9db886cd37c85bda9b23fa57b}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a37edbcf9db886cd37c85bda9b23fa57b}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!adapter@{adapter}}
+\index{adapter@{adapter}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{adapter}{adapter}}
+{\footnotesize\ttfamily Array\+Adapter$<$String$>$ com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+adapter\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a15b4b85193b711fbddce9ac7eaf18be3}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a15b4b85193b711fbddce9ac7eaf18be3}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!backButton@{backButton}}
+\index{backButton@{backButton}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{backButton}{backButton}}
+{\footnotesize\ttfamily Button com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+back\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_afcbbedc93ddc3a808a891975d1a0b68f}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_afcbbedc93ddc3a808a891975d1a0b68f}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!cityList@{cityList}}
+\index{cityList@{cityList}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{cityList}{cityList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_city}{City}}$>$ com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+city\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+市列表 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_abb46d98c9944df77a8e9367dd78a9362}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_abb46d98c9944df77a8e9367dd78a9362}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!countyList@{countyList}}
+\index{countyList@{countyList}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{countyList}{countyList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_county}{County}}$>$ com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+county\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+县列表 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_ab986cbd98e95c65312e08f2f1d25a79d}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_ab986cbd98e95c65312e08f2f1d25a79d}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!currentLevel@{currentLevel}}
+\index{currentLevel@{currentLevel}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{currentLevel}{currentLevel}}
+{\footnotesize\ttfamily int com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+current\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+当前选中的级别 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a05c2401633a4d636752f9af6ea221136}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a05c2401633a4d636752f9af6ea221136}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!dataList@{dataList}}
+\index{dataList@{dataList}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{dataList}{dataList}}
+{\footnotesize\ttfamily List$<$String$>$ com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+data\+List = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a78fb834372e8994dbb0d16e8c94a6308}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a78fb834372e8994dbb0d16e8c94a6308}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!LEVEL\_CITY@{LEVEL\_CITY}}
+\index{LEVEL\_CITY@{LEVEL\_CITY}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{LEVEL\_CITY}{LEVEL\_CITY}}
+{\footnotesize\ttfamily final int com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+L\+E\+V\+E\+L\+\_\+\+C\+I\+TY = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a68c457edf97def5452126ab2b477a868}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a68c457edf97def5452126ab2b477a868}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!LEVEL\_COUNTY@{LEVEL\_COUNTY}}
+\index{LEVEL\_COUNTY@{LEVEL\_COUNTY}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{LEVEL\_COUNTY}{LEVEL\_COUNTY}}
+{\footnotesize\ttfamily final int com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+L\+E\+V\+E\+L\+\_\+\+C\+O\+U\+N\+TY = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a66ee5311e742d5d2ca4e8c1a758329ab}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a66ee5311e742d5d2ca4e8c1a758329ab}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!LEVEL\_PROVINCE@{LEVEL\_PROVINCE}}
+\index{LEVEL\_PROVINCE@{LEVEL\_PROVINCE}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{LEVEL\_PROVINCE}{LEVEL\_PROVINCE}}
+{\footnotesize\ttfamily final int com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+L\+E\+V\+E\+L\+\_\+\+P\+R\+O\+V\+I\+N\+CE = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a0da8e7c5868167ae97ada658d39ec237}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a0da8e7c5868167ae97ada658d39ec237}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!listView@{listView}}
+\index{listView@{listView}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{listView}{listView}}
+{\footnotesize\ttfamily List\+View com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+list\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a9c8eef8f0a9679d2f47b949948194898}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a9c8eef8f0a9679d2f47b949948194898}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!progressDialog@{progressDialog}}
+\index{progressDialog@{progressDialog}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{progressDialog}{progressDialog}}
+{\footnotesize\ttfamily Progress\+Dialog com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+progress\+Dialog\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_ad7b08d77b14fb25b0c0e35a9148ca516}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_ad7b08d77b14fb25b0c0e35a9148ca516}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!provinceList@{provinceList}}
+\index{provinceList@{provinceList}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{provinceList}{provinceList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_province}{Province}}$>$ com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+province\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+省列表 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_aafd3927de25ad3c93d1f69f100863698}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_aafd3927de25ad3c93d1f69f100863698}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!selectedCity@{selectedCity}}
+\index{selectedCity@{selectedCity}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{selectedCity}{selectedCity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_city}{City}} com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+selected\+City\hspace{0.3cm}{\ttfamily [private]}}
+
+选中的城市 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a805001c528f6aa8effcd2194f06dc2bf}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a805001c528f6aa8effcd2194f06dc2bf}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!selectedProvince@{selectedProvince}}
+\index{selectedProvince@{selectedProvince}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{selectedProvince}{selectedProvince}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1db_1_1_province}{Province}} com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+selected\+Province\hspace{0.3cm}{\ttfamily [private]}}
+
+选中的省份 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a9c4686ff93e514df2f56ddcd33d5532a}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a9c4686ff93e514df2f56ddcd33d5532a}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!TAG@{TAG}}
+\index{TAG@{TAG}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{TAG}{TAG}}
+{\footnotesize\ttfamily final String com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+T\+AG = \char`\"{}Choose\+Area\+Fragment\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a4fe7f2ed551b0073ffc47fdb4240e0d3}\label{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment_a4fe7f2ed551b0073ffc47fdb4240e0d3}} 
+\index{com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}!titleText@{titleText}}
+\index{titleText@{titleText}!com.coolweather.android.ChooseAreaFragment@{com.coolweather.android.ChooseAreaFragment}}
+\subsubsection{\texorpdfstring{titleText}{titleText}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Choose\+Area\+Fragment.\+title\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+app/src/main/res/layout/\mbox{\hyperlink{res_2layout_2_choose_area_fragment_8java}{Choose\+Area\+Fragment.\+java}}\end{DoxyCompactItemize}

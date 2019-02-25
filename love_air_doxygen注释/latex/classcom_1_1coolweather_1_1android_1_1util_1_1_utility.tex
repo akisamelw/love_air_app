@@ -1,0 +1,45 @@
+\hypertarget{classcom_1_1coolweather_1_1android_1_1util_1_1_utility}{}\section{com.\+coolweather.\+android.\+util.\+Utility类 参考}
+\label{classcom_1_1coolweather_1_1android_1_1util_1_1_utility}\index{com.coolweather.android.util.Utility@{com.coolweather.android.util.Utility}}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_a2e6c5bca0144cb11d64944b6cad91513}{handle\+Province\+Response}} (String response)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_ab6706a766713dc3fceef0efa45c5bc40}{handle\+City\+Response}} (String response, int province\+Id)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_a6930663141e12ec51c79c2f86d5940ec}{handle\+County\+Response}} (String response, int city\+Id)
+\item 
+static \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1gson_1_1_weather}{com.\+coolweather.\+android.\+gson.\+Weather}} \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_ae2790e64b7c8cf545c76dbe48ab1524c}{handle\+Weather\+Response}} (String response)
+\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_ab6706a766713dc3fceef0efa45c5bc40}\label{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_ab6706a766713dc3fceef0efa45c5bc40}} 
+\index{com.coolweather.android.util.Utility@{com.coolweather.android.util.Utility}!handleCityResponse@{handleCityResponse}}
+\index{handleCityResponse@{handleCityResponse}!com.coolweather.android.util.Utility@{com.coolweather.android.util.Utility}}
+\subsubsection{\texorpdfstring{handleCityResponse()}{handleCityResponse()}}
+{\footnotesize\ttfamily static boolean com.\+coolweather.\+android.\+util.\+Utility.\+handle\+City\+Response (\begin{DoxyParamCaption}\item[{String}]{response,  }\item[{int}]{province\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+解析和处理服务器返回的市级数据 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_a6930663141e12ec51c79c2f86d5940ec}\label{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_a6930663141e12ec51c79c2f86d5940ec}} 
+\index{com.coolweather.android.util.Utility@{com.coolweather.android.util.Utility}!handleCountyResponse@{handleCountyResponse}}
+\index{handleCountyResponse@{handleCountyResponse}!com.coolweather.android.util.Utility@{com.coolweather.android.util.Utility}}
+\subsubsection{\texorpdfstring{handleCountyResponse()}{handleCountyResponse()}}
+{\footnotesize\ttfamily static boolean com.\+coolweather.\+android.\+util.\+Utility.\+handle\+County\+Response (\begin{DoxyParamCaption}\item[{String}]{response,  }\item[{int}]{city\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+解析和处理服务器返回的县级数据 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_a2e6c5bca0144cb11d64944b6cad91513}\label{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_a2e6c5bca0144cb11d64944b6cad91513}} 
+\index{com.coolweather.android.util.Utility@{com.coolweather.android.util.Utility}!handleProvinceResponse@{handleProvinceResponse}}
+\index{handleProvinceResponse@{handleProvinceResponse}!com.coolweather.android.util.Utility@{com.coolweather.android.util.Utility}}
+\subsubsection{\texorpdfstring{handleProvinceResponse()}{handleProvinceResponse()}}
+{\footnotesize\ttfamily static boolean com.\+coolweather.\+android.\+util.\+Utility.\+handle\+Province\+Response (\begin{DoxyParamCaption}\item[{String}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+解析和处理服务器返回的省级数据 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_ae2790e64b7c8cf545c76dbe48ab1524c}\label{classcom_1_1coolweather_1_1android_1_1util_1_1_utility_ae2790e64b7c8cf545c76dbe48ab1524c}} 
+\index{com.coolweather.android.util.Utility@{com.coolweather.android.util.Utility}!handleWeatherResponse@{handleWeatherResponse}}
+\index{handleWeatherResponse@{handleWeatherResponse}!com.coolweather.android.util.Utility@{com.coolweather.android.util.Utility}}
+\subsubsection{\texorpdfstring{handleWeatherResponse()}{handleWeatherResponse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1gson_1_1_weather}{com.\+coolweather.\+android.\+gson.\+Weather}} com.\+coolweather.\+android.\+util.\+Utility.\+handle\+Weather\+Response (\begin{DoxyParamCaption}\item[{String}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+将返回的\+J\+S\+O\+N数据解析成\+Weather实体类 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+app/src/main/res/layout/util/\mbox{\hyperlink{res_2layout_2util_2_utility_8java}{Utility.\+java}}\end{DoxyCompactItemize}

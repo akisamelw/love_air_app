@@ -1,0 +1,20 @@
+digraph "类继承关系图"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node92 [label="DataSupport",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node92 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="com.coolweather.android.db.City",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1db_1_1_city.html",tooltip=" "];
+  Node92 -> Node94 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node94 [label="com.coolweather.android.db.\lCounty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1db_1_1_county.html",tooltip=" "];
+  Node92 -> Node95 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node95 [label="com.coolweather.android.db.\lProvince",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1db_1_1_province.html",tooltip=" "];
+  Node92 -> Node96 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node96 [label="com.example.akisame\l_lin.love_air2.weather.db.City",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1db_1_1_city.html",tooltip=" "];
+  Node92 -> Node97 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node97 [label="com.example.akisame\l_lin.love_air2.weather.db.\lCounty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1db_1_1_county.html",tooltip=" "];
+  Node92 -> Node98 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node98 [label="com.example.akisame\l_lin.love_air2.weather.db.\lProvince",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1db_1_1_province.html",tooltip=" "];
+}

@@ -1,0 +1,39 @@
+digraph "com.example.akisame_lin.love_air2.Map_Fragment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="com.example.akisame\l_lin.love_air2.Map_Fragment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Fragment",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OnClickListener",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" acticity" ,fontname="Helvetica"];
+  Node6 [label="com.example.akisame\l_lin.love_air2.MainActivity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_main_activity.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AppCompatActivity",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" drawerLayout" ,fontname="Helvetica"];
+  Node8 [label="DrawerLayout",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fragmentManager" ,fontname="Helvetica"];
+  Node9 [label="FragmentManager",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" map_btn\nweibo_btn\nnews_btn\nhome_btn" ,fontname="Helvetica"];
+  Node10 [label="ImageView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" navigationView" ,fontname="Helvetica"];
+  Node11 [label="NavigationView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nav_header_main" ,fontname="Helvetica"];
+  Node12 [label="View",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" searchView" ,fontname="Helvetica"];
+  Node13 [label="SearchView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mLocationCient" ,fontname="Helvetica"];
+  Node14 [label="LocationClient",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" markerOptions" ,fontname="Helvetica"];
+  Node15 [label="MarkerOptions",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mapView" ,fontname="Helvetica"];
+  Node16 [label="MapView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" marker" ,fontname="Helvetica"];
+  Node17 [label="Marker",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" baiduMap" ,fontname="Helvetica"];
+  Node18 [label="BaiduMap",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

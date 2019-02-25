@@ -1,0 +1,22 @@
+digraph "com.example.akisame_lin.love_air2.utils.IndoorPoiOverlay"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="com.example.akisame\l_lin.love_air2.utils.Indoor\lPoiOverlay",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="com.example.akisame\l_lin.love_air2.utils.Overlay\lManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="OnMarkerClickListener",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="OnPolylineClickListener",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mOverlayOptionList" ];
+  Node8 [label="List\< OverlayOptions \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mOverlayList" ];
+  Node9 [label="List\< Overlay \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mBaiduMap" ];
+  Node10 [label="BaiduMap",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mIndoorPoiResult" ];
+  Node11 [label="PoiIndoorResult",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

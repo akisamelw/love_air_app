@@ -1,0 +1,170 @@
+\hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util}{}\section{com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util类 参考}
+\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util}\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+
+
+com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util 的协作图\+:
+% FIG 0
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ad8f484946ae5a4c35a9a8a38fdfc34f3}{Resolution\+Util}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a9972c1bec5a6442a9cbb2f52887d338c}{init}} (Context context)
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_af83b3f414284c552e29a3f670a79cda6}{get\+Screen\+Width}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ac95b29e0dfcc91738d143a25fb551150}{get\+Screen\+Height}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ab2ddc2591d48387770e2850271204c6d}{format\+Horizontal}} (int standard\+Value)
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a3edaf584f812d38230497a36cf4d2011}{format\+Vertical}} (int standard\+Value)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util}{Resolution\+Util}} \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_af79e21c2ab2c0f5ad9bfa7ab16dce0d7}{get\+Instance}} ()
+\item 
+static String \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_af2217a6e99bede6b2d78967f85711274}{get\+Format\+Double}} (String str, double sum)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ac1f9c5af54be009a9bfbb2b32c15eaad}{is\+Initial}}
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ab09e8120303a0f3482dc572f125aca2f}{screen\+Width}}
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ac967d7f31893391497656d34a6e227be}{screen\+Height}}
+\item 
+Sparse\+Array$<$ Integer $>$ \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a0238a7b21c381b7e4964b0289e03101b}{vertical\+Pixel\+List}}
+\item 
+Sparse\+Array$<$ Integer $>$ \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a1927a1ef24ad230cf1981e5acaa6b7f2}{horizontal\+Pixel\+List}}
+\end{DoxyCompactItemize}
+\subsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static volatile \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util}{Resolution\+Util}} \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a5e61ea4fd906e5c09bec3e1d63c43dd4}{instance}}
+\item 
+static final int \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_abec01ab6edcc4cfbb8f302855203cdfa}{S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}} = 1080
+\item 
+static final int \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_acb993c8d832ebc9cbbe7b67d0edb8b48}{S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}} = 1853
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+屏幕分辨率计算工具 
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ad8f484946ae5a4c35a9a8a38fdfc34f3}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ad8f484946ae5a4c35a9a8a38fdfc34f3}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!ResolutionUtil@{ResolutionUtil}}
+\index{ResolutionUtil@{ResolutionUtil}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{ResolutionUtil()}{ResolutionUtil()}}
+{\footnotesize\ttfamily com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+Resolution\+Util (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ab2ddc2591d48387770e2850271204c6d}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ab2ddc2591d48387770e2850271204c6d}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!formatHorizontal@{formatHorizontal}}
+\index{formatHorizontal@{formatHorizontal}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{formatHorizontal()}{formatHorizontal()}}
+{\footnotesize\ttfamily int com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+format\+Horizontal (\begin{DoxyParamCaption}\item[{int}]{standard\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a3edaf584f812d38230497a36cf4d2011}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a3edaf584f812d38230497a36cf4d2011}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!formatVertical@{formatVertical}}
+\index{formatVertical@{formatVertical}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{formatVertical()}{formatVertical()}}
+{\footnotesize\ttfamily int com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+format\+Vertical (\begin{DoxyParamCaption}\item[{int}]{standard\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_af2217a6e99bede6b2d78967f85711274}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_af2217a6e99bede6b2d78967f85711274}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!getFormatDouble@{getFormatDouble}}
+\index{getFormatDouble@{getFormatDouble}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{getFormatDouble()}{getFormatDouble()}}
+{\footnotesize\ttfamily static String com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+get\+Format\+Double (\begin{DoxyParamCaption}\item[{String}]{str,  }\item[{double}]{sum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_af79e21c2ab2c0f5ad9bfa7ab16dce0d7}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_af79e21c2ab2c0f5ad9bfa7ab16dce0d7}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util}{Resolution\+Util}} com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ac95b29e0dfcc91738d143a25fb551150}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ac95b29e0dfcc91738d143a25fb551150}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!getScreenHeight@{getScreenHeight}}
+\index{getScreenHeight@{getScreenHeight}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{getScreenHeight()}{getScreenHeight()}}
+{\footnotesize\ttfamily int com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+get\+Screen\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_af83b3f414284c552e29a3f670a79cda6}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_af83b3f414284c552e29a3f670a79cda6}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!getScreenWidth@{getScreenWidth}}
+\index{getScreenWidth@{getScreenWidth}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{getScreenWidth()}{getScreenWidth()}}
+{\footnotesize\ttfamily int com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+get\+Screen\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a9972c1bec5a6442a9cbb2f52887d338c}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a9972c1bec5a6442a9cbb2f52887d338c}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!init@{init}}
+\index{init@{init}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+init (\begin{DoxyParamCaption}\item[{Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+获取当前设备屏幕分辨率
+
+
+\begin{DoxyParams}{参数}
+{\em context} & context \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a1927a1ef24ad230cf1981e5acaa6b7f2}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a1927a1ef24ad230cf1981e5acaa6b7f2}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!horizontalPixelList@{horizontalPixelList}}
+\index{horizontalPixelList@{horizontalPixelList}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{horizontalPixelList}{horizontalPixelList}}
+{\footnotesize\ttfamily Sparse\+Array$<$Integer$>$ com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+horizontal\+Pixel\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+水平方向数据列 \mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a5e61ea4fd906e5c09bec3e1d63c43dd4}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a5e61ea4fd906e5c09bec3e1d63c43dd4}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!instance@{instance}}
+\index{instance@{instance}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util}{Resolution\+Util}} com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ac1f9c5af54be009a9bfbb2b32c15eaad}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ac1f9c5af54be009a9bfbb2b32c15eaad}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!isInitial@{isInitial}}
+\index{isInitial@{isInitial}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{isInitial}{isInitial}}
+{\footnotesize\ttfamily boolean com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+is\+Initial\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ac967d7f31893391497656d34a6e227be}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ac967d7f31893391497656d34a6e227be}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!screenHeight@{screenHeight}}
+\index{screenHeight@{screenHeight}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{screenHeight}{screenHeight}}
+{\footnotesize\ttfamily int com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+screen\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ab09e8120303a0f3482dc572f125aca2f}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_ab09e8120303a0f3482dc572f125aca2f}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!screenWidth@{screenWidth}}
+\index{screenWidth@{screenWidth}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{screenWidth}{screenWidth}}
+{\footnotesize\ttfamily int com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+screen\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_acb993c8d832ebc9cbbe7b67d0edb8b48}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_acb993c8d832ebc9cbbe7b67d0edb8b48}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!STANDARD\_SCREEN\_HEIGHT@{STANDARD\_SCREEN\_HEIGHT}}
+\index{STANDARD\_SCREEN\_HEIGHT@{STANDARD\_SCREEN\_HEIGHT}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{STANDARD\_SCREEN\_HEIGHT}{STANDARD\_SCREEN\_HEIGHT}}
+{\footnotesize\ttfamily final int com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT = 1853\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+U\+I模版标准高度 \mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_abec01ab6edcc4cfbb8f302855203cdfa}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_abec01ab6edcc4cfbb8f302855203cdfa}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!STANDARD\_SCREEN\_WIDTH@{STANDARD\_SCREEN\_WIDTH}}
+\index{STANDARD\_SCREEN\_WIDTH@{STANDARD\_SCREEN\_WIDTH}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{STANDARD\_SCREEN\_WIDTH}{STANDARD\_SCREEN\_WIDTH}}
+{\footnotesize\ttfamily final int com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH = 1080\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+U\+I模版标准宽度 \mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a0238a7b21c381b7e4964b0289e03101b}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util_a0238a7b21c381b7e4964b0289e03101b}} 
+\index{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}!verticalPixelList@{verticalPixelList}}
+\index{verticalPixelList@{verticalPixelList}!com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil@{com.example.akisame\_lin.love\_air2.Bean.ResolutionUtil}}
+\subsubsection{\texorpdfstring{verticalPixelList}{verticalPixelList}}
+{\footnotesize\ttfamily Sparse\+Array$<$Integer$>$ com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+Bean.\+Resolution\+Util.\+vertical\+Pixel\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+垂直方向数据列 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+app/src/main/java/com/example/akisame\+\_\+lin/love\+\_\+air2/\+Bean/\mbox{\hyperlink{_resolution_util_8java}{Resolution\+Util.\+java}}\end{DoxyCompactItemize}

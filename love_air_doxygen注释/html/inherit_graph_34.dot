@@ -1,0 +1,10 @@
+digraph "类继承关系图"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="com.example.akisame\l_lin.love_air2.presenter.Calendar\lAdapter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_calendar_adapter.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="com.example.akisame\l_lin.love_air2.presenter.Sign\lAdapter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_sign_adapter.html",tooltip=" "];
+}

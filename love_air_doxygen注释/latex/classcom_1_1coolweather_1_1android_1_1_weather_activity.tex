@@ -1,0 +1,196 @@
+\hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity}{}\section{com.\+coolweather.\+android.\+Weather\+Activity类 参考}
+\label{classcom_1_1coolweather_1_1android_1_1_weather_activity}\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+
+
+类 com.\+coolweather.\+android.\+Weather\+Activity 继承关系图\+:
+% FIG 0
+
+
+com.\+coolweather.\+android.\+Weather\+Activity 的协作图\+:
+% FIG 1
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac4d54d2108392f5e70a17eb945aef934}{request\+Weather}} (final String weather\+Id)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+Drawer\+Layout \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_ae2818226e67204c76751063a0127e0d4}{drawer\+Layout}}
+\item 
+Swipe\+Refresh\+Layout \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_abae82d46715e9da68858482bfcae57cc}{swipe\+Refresh}}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_a1da84b644f79936f76652e4d2491d37e}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_a6d725e96ad0b093549ec881d3ec760d8}{load\+Bing\+Pic}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_abb54e265b2c45384b36a44b4e6ef4ab7}{show\+Weather\+Info}} (\mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1gson_1_1_weather}{com.\+coolweather.\+android.\+gson.\+Weather}} weather)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+Scroll\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_a6968c8916501dd436af670fc675265d9}{weather\+Layout}}
+\item 
+Button \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_a69072fbc789b8497b6ffaae7826cdc35}{nav\+Button}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_af61f9f5d18a22974a09d943f7972dcde}{title\+City}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_a91761202883c4e8a4a9abada0eea0441}{title\+Update\+Time}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_a00cd61b72b91c08686cb3c46742206db}{degree\+Text}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_aea6a53ff7ae2f66ceb4fd0c3cf3417d8}{weather\+Info\+Text}}
+\item 
+Linear\+Layout \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac1d097c39d5aedbedf6d4e73063696bb}{forecast\+Layout}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_aff3e4aaa9258a0fc73d3918ed5d5ab19}{aqi\+Text}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac53e31fa29894a3b120678052dfccd1e}{pm25\+Text}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_af9e7128c02c13eda8167b1b2b3b386d6}{comfort\+Text}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_a85b11a2a903276c001bb4473356cd126}{car\+Wash\+Text}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_aa39259745722e02b3b3b5dbb81e2b80e}{sport\+Text}}
+\item 
+Image\+View \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_a768583afa0bf693b3f77c3d757a1fdfd}{bing\+Pic\+Img}}
+\item 
+String \mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac7d3165ef0d78b38a3b45bc58701a143}{m\+Weather\+Id}}
+\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_a6d725e96ad0b093549ec881d3ec760d8}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_a6d725e96ad0b093549ec881d3ec760d8}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!loadBingPic@{loadBingPic}}
+\index{loadBingPic@{loadBingPic}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{loadBingPic()}{loadBingPic()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Weather\+Activity.\+load\+Bing\+Pic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+加载必应每日一图 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_a1da84b644f79936f76652e4d2491d37e}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_a1da84b644f79936f76652e4d2491d37e}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Weather\+Activity.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac4d54d2108392f5e70a17eb945aef934}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac4d54d2108392f5e70a17eb945aef934}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!requestWeather@{requestWeather}}
+\index{requestWeather@{requestWeather}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{requestWeather()}{requestWeather()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Weather\+Activity.\+request\+Weather (\begin{DoxyParamCaption}\item[{final String}]{weather\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+根据天气id请求城市天气信息。 \mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_abb54e265b2c45384b36a44b4e6ef4ab7}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_abb54e265b2c45384b36a44b4e6ef4ab7}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!showWeatherInfo@{showWeatherInfo}}
+\index{showWeatherInfo@{showWeatherInfo}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{showWeatherInfo()}{showWeatherInfo()}}
+{\footnotesize\ttfamily void com.\+coolweather.\+android.\+Weather\+Activity.\+show\+Weather\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1coolweather_1_1android_1_1gson_1_1_weather}{com.\+coolweather.\+android.\+gson.\+Weather}}}]{weather }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+处理并展示\+Weather实体类中的数据。 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_aff3e4aaa9258a0fc73d3918ed5d5ab19}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_aff3e4aaa9258a0fc73d3918ed5d5ab19}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!aqiText@{aqiText}}
+\index{aqiText@{aqiText}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{aqiText}{aqiText}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Weather\+Activity.\+aqi\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_a768583afa0bf693b3f77c3d757a1fdfd}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_a768583afa0bf693b3f77c3d757a1fdfd}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!bingPicImg@{bingPicImg}}
+\index{bingPicImg@{bingPicImg}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{bingPicImg}{bingPicImg}}
+{\footnotesize\ttfamily Image\+View com.\+coolweather.\+android.\+Weather\+Activity.\+bing\+Pic\+Img\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_a85b11a2a903276c001bb4473356cd126}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_a85b11a2a903276c001bb4473356cd126}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!carWashText@{carWashText}}
+\index{carWashText@{carWashText}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{carWashText}{carWashText}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Weather\+Activity.\+car\+Wash\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_af9e7128c02c13eda8167b1b2b3b386d6}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_af9e7128c02c13eda8167b1b2b3b386d6}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!comfortText@{comfortText}}
+\index{comfortText@{comfortText}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{comfortText}{comfortText}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Weather\+Activity.\+comfort\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_a00cd61b72b91c08686cb3c46742206db}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_a00cd61b72b91c08686cb3c46742206db}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!degreeText@{degreeText}}
+\index{degreeText@{degreeText}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{degreeText}{degreeText}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Weather\+Activity.\+degree\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_ae2818226e67204c76751063a0127e0d4}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_ae2818226e67204c76751063a0127e0d4}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!drawerLayout@{drawerLayout}}
+\index{drawerLayout@{drawerLayout}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{drawerLayout}{drawerLayout}}
+{\footnotesize\ttfamily Drawer\+Layout com.\+coolweather.\+android.\+Weather\+Activity.\+drawer\+Layout}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac1d097c39d5aedbedf6d4e73063696bb}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac1d097c39d5aedbedf6d4e73063696bb}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!forecastLayout@{forecastLayout}}
+\index{forecastLayout@{forecastLayout}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{forecastLayout}{forecastLayout}}
+{\footnotesize\ttfamily Linear\+Layout com.\+coolweather.\+android.\+Weather\+Activity.\+forecast\+Layout\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac7d3165ef0d78b38a3b45bc58701a143}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac7d3165ef0d78b38a3b45bc58701a143}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!mWeatherId@{mWeatherId}}
+\index{mWeatherId@{mWeatherId}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{mWeatherId}{mWeatherId}}
+{\footnotesize\ttfamily String com.\+coolweather.\+android.\+Weather\+Activity.\+m\+Weather\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_a69072fbc789b8497b6ffaae7826cdc35}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_a69072fbc789b8497b6ffaae7826cdc35}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!navButton@{navButton}}
+\index{navButton@{navButton}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{navButton}{navButton}}
+{\footnotesize\ttfamily Button com.\+coolweather.\+android.\+Weather\+Activity.\+nav\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac53e31fa29894a3b120678052dfccd1e}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_ac53e31fa29894a3b120678052dfccd1e}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!pm25Text@{pm25Text}}
+\index{pm25Text@{pm25Text}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{pm25Text}{pm25Text}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Weather\+Activity.\+pm25\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_aa39259745722e02b3b3b5dbb81e2b80e}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_aa39259745722e02b3b3b5dbb81e2b80e}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!sportText@{sportText}}
+\index{sportText@{sportText}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{sportText}{sportText}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Weather\+Activity.\+sport\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_abae82d46715e9da68858482bfcae57cc}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_abae82d46715e9da68858482bfcae57cc}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!swipeRefresh@{swipeRefresh}}
+\index{swipeRefresh@{swipeRefresh}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{swipeRefresh}{swipeRefresh}}
+{\footnotesize\ttfamily Swipe\+Refresh\+Layout com.\+coolweather.\+android.\+Weather\+Activity.\+swipe\+Refresh}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_af61f9f5d18a22974a09d943f7972dcde}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_af61f9f5d18a22974a09d943f7972dcde}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!titleCity@{titleCity}}
+\index{titleCity@{titleCity}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{titleCity}{titleCity}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Weather\+Activity.\+title\+City\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_a91761202883c4e8a4a9abada0eea0441}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_a91761202883c4e8a4a9abada0eea0441}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!titleUpdateTime@{titleUpdateTime}}
+\index{titleUpdateTime@{titleUpdateTime}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{titleUpdateTime}{titleUpdateTime}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Weather\+Activity.\+title\+Update\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_aea6a53ff7ae2f66ceb4fd0c3cf3417d8}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_aea6a53ff7ae2f66ceb4fd0c3cf3417d8}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!weatherInfoText@{weatherInfoText}}
+\index{weatherInfoText@{weatherInfoText}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{weatherInfoText}{weatherInfoText}}
+{\footnotesize\ttfamily Text\+View com.\+coolweather.\+android.\+Weather\+Activity.\+weather\+Info\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1coolweather_1_1android_1_1_weather_activity_a6968c8916501dd436af670fc675265d9}\label{classcom_1_1coolweather_1_1android_1_1_weather_activity_a6968c8916501dd436af670fc675265d9}} 
+\index{com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}!weatherLayout@{weatherLayout}}
+\index{weatherLayout@{weatherLayout}!com.coolweather.android.WeatherActivity@{com.coolweather.android.WeatherActivity}}
+\subsubsection{\texorpdfstring{weatherLayout}{weatherLayout}}
+{\footnotesize\ttfamily Scroll\+View com.\+coolweather.\+android.\+Weather\+Activity.\+weather\+Layout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+app/src/main/res/layout/\mbox{\hyperlink{res_2layout_2_weather_activity_8java}{Weather\+Activity.\+java}}\end{DoxyCompactItemize}

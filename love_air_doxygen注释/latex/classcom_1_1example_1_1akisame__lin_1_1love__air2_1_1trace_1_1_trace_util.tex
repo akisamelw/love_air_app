@@ -1,0 +1,137 @@
+\hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util}{}\section{com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util类 参考}
+\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util}\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+
+
+com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util 的协作图\+:
+% FIG 0
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_acb3327c4001f4adf9021efd0ab08e1c2}{draw\+History\+Track}} (Baidu\+Map baidu\+Map, List$<$ Lat\+Lng $>$ points, Sort\+Type sort\+Type)
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a92503eee73e5103a40d0a1ad80159f68}{animate\+Map\+Status}} (Lat\+Lng point, float zoom)
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a22ad9d640bc36402ecf0156cf64685f5}{animate\+Map\+Status}} (List$<$ Lat\+Lng $>$ points)
+\item 
+double \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a06ff7ea1a310188cdb9fffe8d2b58ce3}{get\+Angle}} (Lat\+Lng from\+Point, Lat\+Lng to\+Point)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a3d1f6f674d4e5aa7905065435bdbeba7}{get\+Slope}} (Lat\+Lng from\+Point, Lat\+Lng to\+Point)
+\item 
+static Lat\+Lng \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a18fd0500677f5a558dd94bdcbf7a28c2}{convert\+Trace2\+Map}} (com.\+baidu.\+trace.\+model.\+Lat\+Lng trace\+Lat\+Lng)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_ac1e5fe83df677f46df6bfb67959c9f7d}{is\+Zero\+Point}} (double latitude, double longitude)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a38c1e50c145bbffaea2436d26a8aa5d1}{is\+Equal\+To\+Zero}} (double value)
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+Overlay \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a45b7fa4b50ef03b6f197f600dd7a4fcc}{polyline\+Overlay}}
+\item 
+Baidu\+Map \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a1969b78bd5571f34bb386512211255c6}{m\+Baidu\+Map}}
+\item 
+Map\+Status \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_aac3c71aef41b8930b5129e511e644ec4}{map\+Status}}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Created by cs\+\_\+android on 2018/1/15. 
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a92503eee73e5103a40d0a1ad80159f68}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a92503eee73e5103a40d0a1ad80159f68}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!animateMapStatus@{animateMapStatus}}
+\index{animateMapStatus@{animateMapStatus}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{animateMapStatus()}{animateMapStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+animate\+Map\+Status (\begin{DoxyParamCaption}\item[{Lat\+Lng}]{point,  }\item[{float}]{zoom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a22ad9d640bc36402ecf0156cf64685f5}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a22ad9d640bc36402ecf0156cf64685f5}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!animateMapStatus@{animateMapStatus}}
+\index{animateMapStatus@{animateMapStatus}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{animateMapStatus()}{animateMapStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+animate\+Map\+Status (\begin{DoxyParamCaption}\item[{List$<$ Lat\+Lng $>$}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a18fd0500677f5a558dd94bdcbf7a28c2}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a18fd0500677f5a558dd94bdcbf7a28c2}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!convertTrace2Map@{convertTrace2Map}}
+\index{convertTrace2Map@{convertTrace2Map}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{convertTrace2Map()}{convertTrace2Map()}}
+{\footnotesize\ttfamily static Lat\+Lng com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+convert\+Trace2\+Map (\begin{DoxyParamCaption}\item[{com.\+baidu.\+trace.\+model.\+Lat\+Lng}]{trace\+Lat\+Lng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+将轨迹坐标对象转换为地图坐标对象
+
+
+\begin{DoxyParams}{参数}
+{\em trace\+Lat\+Lng} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_acb3327c4001f4adf9021efd0ab08e1c2}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_acb3327c4001f4adf9021efd0ab08e1c2}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!drawHistoryTrack@{drawHistoryTrack}}
+\index{drawHistoryTrack@{drawHistoryTrack}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{drawHistoryTrack()}{drawHistoryTrack()}}
+{\footnotesize\ttfamily void com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+draw\+History\+Track (\begin{DoxyParamCaption}\item[{Baidu\+Map}]{baidu\+Map,  }\item[{List$<$ Lat\+Lng $>$}]{points,  }\item[{Sort\+Type}]{sort\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+绘制历史轨迹 \mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a06ff7ea1a310188cdb9fffe8d2b58ce3}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a06ff7ea1a310188cdb9fffe8d2b58ce3}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!getAngle@{getAngle}}
+\index{getAngle@{getAngle}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{getAngle()}{getAngle()}}
+{\footnotesize\ttfamily double com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+get\+Angle (\begin{DoxyParamCaption}\item[{Lat\+Lng}]{from\+Point,  }\item[{Lat\+Lng}]{to\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+根据两点算取图标转的角度 \mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a3d1f6f674d4e5aa7905065435bdbeba7}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a3d1f6f674d4e5aa7905065435bdbeba7}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!getSlope@{getSlope}}
+\index{getSlope@{getSlope}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{getSlope()}{getSlope()}}
+{\footnotesize\ttfamily static double com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+get\+Slope (\begin{DoxyParamCaption}\item[{Lat\+Lng}]{from\+Point,  }\item[{Lat\+Lng}]{to\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+算斜率 \mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a38c1e50c145bbffaea2436d26a8aa5d1}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a38c1e50c145bbffaea2436d26a8aa5d1}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!isEqualToZero@{isEqualToZero}}
+\index{isEqualToZero@{isEqualToZero}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{isEqualToZero()}{isEqualToZero()}}
+{\footnotesize\ttfamily static boolean com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+is\+Equal\+To\+Zero (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+校验double数值是否为0
+
+
+\begin{DoxyParams}{参数}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_ac1e5fe83df677f46df6bfb67959c9f7d}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_ac1e5fe83df677f46df6bfb67959c9f7d}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!isZeroPoint@{isZeroPoint}}
+\index{isZeroPoint@{isZeroPoint}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{isZeroPoint()}{isZeroPoint()}}
+{\footnotesize\ttfamily static boolean com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+is\+Zero\+Point (\begin{DoxyParamCaption}\item[{double}]{latitude,  }\item[{double}]{longitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_aac3c71aef41b8930b5129e511e644ec4}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_aac3c71aef41b8930b5129e511e644ec4}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!mapStatus@{mapStatus}}
+\index{mapStatus@{mapStatus}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{mapStatus}{mapStatus}}
+{\footnotesize\ttfamily Map\+Status com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+map\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a1969b78bd5571f34bb386512211255c6}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a1969b78bd5571f34bb386512211255c6}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!mBaiduMap@{mBaiduMap}}
+\index{mBaiduMap@{mBaiduMap}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{mBaiduMap}{mBaiduMap}}
+{\footnotesize\ttfamily Baidu\+Map com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+m\+Baidu\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a45b7fa4b50ef03b6f197f600dd7a4fcc}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util_a45b7fa4b50ef03b6f197f600dd7a4fcc}} 
+\index{com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}!polylineOverlay@{polylineOverlay}}
+\index{polylineOverlay@{polylineOverlay}!com.example.akisame\_lin.love\_air2.trace.TraceUtil@{com.example.akisame\_lin.love\_air2.trace.TraceUtil}}
+\subsubsection{\texorpdfstring{polylineOverlay}{polylineOverlay}}
+{\footnotesize\ttfamily Overlay com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+trace.\+Trace\+Util.\+polyline\+Overlay\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+app/src/main/java/com/example/akisame\+\_\+lin/love\+\_\+air2/trace/\mbox{\hyperlink{_trace_util_8java}{Trace\+Util.\+java}}\end{DoxyCompactItemize}

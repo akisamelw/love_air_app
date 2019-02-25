@@ -1,0 +1,35 @@
+digraph "com.coolweather.android.ChooseAreaFragment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="com.coolweather.android.\lChooseAreaFragment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Fragment",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dataList" ,fontname="Helvetica"];
+  Node4 [label="List\< String \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" backButton" ,fontname="Helvetica"];
+  Node5 [label="Button",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" selectedCity" ,fontname="Helvetica"];
+  Node6 [label="com.coolweather.android.db.City",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1db_1_1_city.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="DataSupport",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" selectedProvince" ,fontname="Helvetica"];
+  Node8 [label="com.coolweather.android.db.\lProvince",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1coolweather_1_1android_1_1db_1_1_province.html",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" provinceList" ,fontname="Helvetica"];
+  Node9 [label="List\< com.coolweather.android.db.\lProvince \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" adapter" ,fontname="Helvetica"];
+  Node10 [label="ArrayAdapter\< String \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" listView" ,fontname="Helvetica"];
+  Node11 [label="ListView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cityList" ,fontname="Helvetica"];
+  Node12 [label="List\< com.coolweather.android.db.\lCity \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" progressDialog" ,fontname="Helvetica"];
+  Node13 [label="ProgressDialog",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" countyList" ,fontname="Helvetica"];
+  Node14 [label="List\< com.coolweather.android.db.\lCounty \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" titleText" ,fontname="Helvetica"];
+  Node15 [label="TextView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

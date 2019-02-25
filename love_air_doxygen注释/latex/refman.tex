@@ -1,0 +1,390 @@
+\let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+\usepackage{ifpdf,ifxetex}
+
+% NLS support packages
+\usepackage{CJKutf8}
+
+% Font selection
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Arguments of doxygenemoji:
+% 1) ':<text>:' form of the emoji, already "LaTeX"-escaped
+% 2) file with the name of the emoji without the .png extension
+% in case image exist use this otherwise use the ':<text>:' form
+\newcommand{\doxygenemoji}[2]{%
+  \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+}
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+\newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+\doxynormalparskip
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize 制作者 Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize 制作者 Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+\usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+
+% Hyperlinks (required, but should be loaded last)
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \ifxetex
+    \usepackage[pagebackref=true]{hyperref}
+  \else
+    \usepackage[ps2pdf,pagebackref=true]{hyperref}
+  \fi
+\fi
+
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+\usepackage{etoc}
+\etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+\renewcommand{\numberline}[1]{#1~}
+%===== C O N T E N T S =====
+
+\begin{document}
+\begin{CJK}{UTF8}{min}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large love\+\_\+air }\\
+\vspace*{1cm}
+{\large 制作者 Doxygen 1.8.15}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{命名空间索引}
+\input{namespaces}
+\chapter{继承关系索引}
+\input{hierarchy}
+\chapter{类索引}
+\input{annotated}
+\chapter{文件索引}
+\input{files}
+\chapter{命名空间文档}
+\input{namespacecom}
+\input{namespacecom_1_1coolweather}
+\input{namespacecom_1_1coolweather_1_1android}
+\input{namespacecom_1_1coolweather_1_1android_1_1db}
+\input{namespacecom_1_1coolweather_1_1android_1_1gson}
+\input{namespacecom_1_1coolweather_1_1android_1_1service}
+\input{namespacecom_1_1coolweather_1_1android_1_1util}
+\input{namespacecom_1_1example}
+\input{namespacecom_1_1example_1_1akisame__lin}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1activity}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1adapter}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1bean1}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1db}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1service}
+\input{namespacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1util}
+\chapter{类说明}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_add_weibo_information_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_app_manager}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_a_q_i}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_a_q_i}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_a_q_i_1_1_a_q_i_city}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_a_q_i_1_1_a_q_i_city}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1service_1_1_auto_update_service}
+\input{classcom_1_1coolweather_1_1android_1_1service_1_1_auto_update_service}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_base_activity}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_basic}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_basic}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_biking_route_overlay}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_build_config}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_bus_line_overlay}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_calendar_adapter}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_suggestion_1_1_car_wash}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_suggestion_1_1_car_wash}
+\input{classcom_1_1coolweather_1_1android_1_1_choose_area_fragment}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1_choose_area_fragment}
+\input{classcom_1_1coolweather_1_1android_1_1db_1_1_city}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1db_1_1_city}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_suggestion_1_1_comfort}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_suggestion_1_1_comfort}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_common_util}
+\input{classcom_1_1coolweather_1_1android_1_1db_1_1_county}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1db_1_1_county}
+\input{enumcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_sign_view_1_1_day_type}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_driving_route_overlay}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_example_instrumented_test}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_example_unit_test}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_forecast}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_forecast}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_home___fragment}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1util_1_1_http_util}
+\input{classcom_1_1coolweather_1_1android_1_1util_1_1_http_util}
+\input{interfacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_i_loinpersenter}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_image_utils}
+\input{interfacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_i_main_ui_persenter}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_indoor_poi_overlay}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_indoor_route_overlay}
+\input{interfacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1adapter_1_1_weibo_adapter_1_1_item_click_listener}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_login_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1_main_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_main_activity}
+\input{classcom_1_1coolweather_1_1android_1_1_main_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_main_activityb}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1activity_1_1_main_activityb}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_map___fragment}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1activity_1_1_map_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_mass_transit_route_overlay}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_now_1_1_more}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_forecast_1_1_more}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_now_1_1_more}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_forecast_1_1_more}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1activity_1_1_map_activity_1_1_my_b_d_abstract_location_listener}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_my_fragment_pager_adapter}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_map___fragment_1_1_my_location_listener}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1activity_1_1_navigation_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_news}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_news___fragment}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_news_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_news_adapter}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_news_display_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_now}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_now}
+\input{interfacecom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_sign_view_1_1_on_today_click_listener}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1bean1_1_1_person}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_poi_overlay}
+\input{classcom_1_1coolweather_1_1android_1_1db_1_1_province}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1db_1_1_province}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_register_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1bean1_1_1_register_user}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_resolution_util}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_sign_adapter}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_sign_entity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_sign_view}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_suggestion_1_1_sport}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_suggestion_1_1_sport}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_bean_1_1_string_util}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_suggestion}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_suggestion}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_forecast_1_1_temperature}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_forecast_1_1_temperature}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1trace_1_1_trace_util}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_transit_route_overlay}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_basic_1_1_update}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_basic_1_1_update}
+\input{classcom_1_1coolweather_1_1android_1_1util_1_1_utility}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1util_1_1_utility}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1presenter_1_1_news_adapter_1_1_view_holder}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_walking_route_overlay}
+\input{classcom_1_1coolweather_1_1android_1_1gson_1_1_weather}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1gson_1_1_weather}
+\input{classcom_1_1coolweather_1_1android_1_1_weather_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1weather_1_1_weather_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_weibo___fragment}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_weibo_activity}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1adapter_1_1_weibo_adapter}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1adapter_1_1_weibo_adapter_1_1_weibo_holder}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1bean1_1_1_weibo_infomation_req}
+\input{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1_welcome_activity}
+\chapter{文件说明}
+\input{_build_config_8java}
+\input{_example_instrumented_test_8java}
+\input{activity_2_main_activityb_8java}
+\input{_main_activityb_8java}
+\input{_map_activity_8java}
+\input{_navigation_activity_8java}
+\input{_weibo_adapter_8java}
+\input{_add_weibo_information_activity_8java}
+\input{_app_manager_8java}
+\input{_base_activity_8java}
+\input{_news_8java}
+\input{_resolution_util_8java}
+\input{_sign_view_8java}
+\input{_string_util_8java}
+\input{_person_8java}
+\input{_register_user_8java}
+\input{_weibo_infomation_req_8java}
+\input{_home___fragment_8java}
+\input{_login_activity_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2_main_activity_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2_main_activity_8java}
+\input{res_2layout_2_main_activity_8java}
+\input{_map___fragment_8java}
+\input{_news___fragment_8java}
+\input{_news_activity_8java}
+\input{_news_display_activity_8java}
+\input{_calendar_adapter_8java}
+\input{_i_loinpersenter_8java}
+\input{_i_main_ui_persenter_8java}
+\input{_my_fragment_pager_adapter_8java}
+\input{_news_adapter_8java}
+\input{_sign_adapter_8java}
+\input{_sign_entity_8java}
+\input{_register_activity_8java}
+\input{_common_util_8java}
+\input{_trace_util_8java}
+\input{_biking_route_overlay_8java}
+\input{_bus_line_overlay_8java}
+\input{_driving_route_overlay_8java}
+\input{_image_utils_8java}
+\input{_indoor_poi_overlay_8java}
+\input{_indoor_route_overlay_8java}
+\input{_mass_transit_route_overlay_8java}
+\input{_overlay_manager_8java}
+\input{_poi_overlay_8java}
+\input{_transit_route_overlay_8java}
+\input{_walking_route_overlay_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2_choose_area_fragment_8java}
+\input{res_2layout_2_choose_area_fragment_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2db_2_city_8java}
+\input{res_2layout_2db_2_city_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2db_2_county_8java}
+\input{res_2layout_2db_2_county_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2db_2_province_8java}
+\input{res_2layout_2db_2_province_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2gson_2_a_q_i_8java}
+\input{res_2layout_2gson_2_a_q_i_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2gson_2_basic_8java}
+\input{res_2layout_2gson_2_basic_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2gson_2_forecast_8java}
+\input{res_2layout_2gson_2_forecast_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2gson_2_now_8java}
+\input{res_2layout_2gson_2_now_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2gson_2_suggestion_8java}
+\input{res_2layout_2gson_2_suggestion_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2gson_2_weather_8java}
+\input{res_2layout_2gson_2_weather_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2service_2_auto_update_service_8java}
+\input{res_2layout_2service_2_auto_update_service_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2util_2_http_util_8java}
+\input{res_2layout_2util_2_http_util_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2util_2_utility_8java}
+\input{res_2layout_2util_2_utility_8java}
+\input{java_2com_2example_2akisame__lin_2love__air2_2weather_2_weather_activity_8java}
+\input{res_2layout_2_weather_activity_8java}
+\input{_weibo___fragment_8java}
+\input{_weibo_activity_8java}
+\input{_welcome_activity_8java}
+\input{_example_unit_test_8java}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{\indexname}
+\printindex
+
+\end{CJK}
+\end{document}

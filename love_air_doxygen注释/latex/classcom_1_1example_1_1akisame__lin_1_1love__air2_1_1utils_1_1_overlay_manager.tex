@@ -1,0 +1,120 @@
+\hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager}{}\section{com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager类 参考}
+\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager}\index{com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}}
+
+
+类 com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager 继承关系图\+:
+% FIG 0
+
+
+com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager 的协作图\+:
+% FIG 1
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ad74ec83ee7b547fb38569b0d8502b390}{Overlay\+Manager}} (Baidu\+Map baidu\+Map)
+\item 
+abstract List$<$ Overlay\+Options $>$ \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ab43fa6415de888d480d913d1b924b309}{get\+Overlay\+Options}} ()
+\item 
+final void \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_a24ae8c26fe0b12334e47b7d6750934b1}{add\+To\+Map}} ()
+\item 
+final void \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_aac0bce20620393dac45943920a42bf3b}{remove\+From\+Map}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_a0378e30878118dc7cf782d6ec3f53de4}{zoom\+To\+Span}} ()
+\end{DoxyCompactItemize}
+\subsection*{包属性}
+\begin{DoxyCompactItemize}
+\item 
+Baidu\+Map \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_a31aa73745cf259b0dfe206deb34d2a9c}{m\+Baidu\+Map}} = null
+\item 
+List$<$ Overlay $>$ \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ab43b42db742ecd7014645c458d5c4463}{m\+Overlay\+List}} = null
+\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Overlay\+Options $>$ \mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_aac09ca5b2da703be8945dd3378bd8462}{m\+Overlay\+Option\+List}} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+该类提供一个能够显示和管理多个\+Overlay的基类 
+
+复写\mbox{\hyperlink{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ab43fa6415de888d480d913d1b924b309}{get\+Overlay\+Options()}} 设置欲显示和管理的\+Overlay列表 
+
+通过 \mbox{\hyperlink{}{com.\+baidu.\+mapapi.\+map.\+Baidu\+Map\#set\+On\+Marker\+Click\+Listener(com.\+baidu.\+mapapi.\+map.\+Baidu\+Map.\+On\+Marker\+Click\+Listener)}} 将覆盖物点击事件传递给\+Overlay\+Manager后，\+Overlay\+Manager才能响应点击事件。 
+
+复写\mbox{\hyperlink{}{on\+Marker\+Click(com.\+baidu.\+mapapi.\+map.\+Marker)}} 处理\+Marker点击事件 
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ad74ec83ee7b547fb38569b0d8502b390}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ad74ec83ee7b547fb38569b0d8502b390}} 
+\index{com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}!OverlayManager@{OverlayManager}}
+\index{OverlayManager@{OverlayManager}!com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}}
+\subsubsection{\texorpdfstring{OverlayManager()}{OverlayManager()}}
+{\footnotesize\ttfamily com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager.\+Overlay\+Manager (\begin{DoxyParamCaption}\item[{Baidu\+Map}]{baidu\+Map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+通过一个\+Baidu\+Map 对象构造
+
+
+\begin{DoxyParams}{参数}
+{\em baidu\+Map} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_a24ae8c26fe0b12334e47b7d6750934b1}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_a24ae8c26fe0b12334e47b7d6750934b1}} 
+\index{com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}!addToMap@{addToMap}}
+\index{addToMap@{addToMap}!com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}}
+\subsubsection{\texorpdfstring{addToMap()}{addToMap()}}
+{\footnotesize\ttfamily final void com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager.\+add\+To\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+将所有\+Overlay 添加到地图上 \mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ab43fa6415de888d480d913d1b924b309}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ab43fa6415de888d480d913d1b924b309}} 
+\index{com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}!getOverlayOptions@{getOverlayOptions}}
+\index{getOverlayOptions@{getOverlayOptions}!com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}}
+\subsubsection{\texorpdfstring{getOverlayOptions()}{getOverlayOptions()}}
+{\footnotesize\ttfamily abstract List$<$Overlay\+Options$>$ com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager.\+get\+Overlay\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+覆写此方法设置要管理的\+Overlay列表
+
+\begin{DoxyReturn}{返回}
+管理的\+Overlay列表 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_aac0bce20620393dac45943920a42bf3b}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_aac0bce20620393dac45943920a42bf3b}} 
+\index{com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}!removeFromMap@{removeFromMap}}
+\index{removeFromMap@{removeFromMap}!com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}}
+\subsubsection{\texorpdfstring{removeFromMap()}{removeFromMap()}}
+{\footnotesize\ttfamily final void com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager.\+remove\+From\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+将所有\+Overlay 从 地图上消除 \mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_a0378e30878118dc7cf782d6ec3f53de4}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_a0378e30878118dc7cf782d6ec3f53de4}} 
+\index{com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}!zoomToSpan@{zoomToSpan}}
+\index{zoomToSpan@{zoomToSpan}!com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}}
+\subsubsection{\texorpdfstring{zoomToSpan()}{zoomToSpan()}}
+{\footnotesize\ttfamily void com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager.\+zoom\+To\+Span (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+缩放地图，使所有\+Overlay都在合适的视野内 
+
+注： 该方法只对\+Marker类型的overlay有效 
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_a31aa73745cf259b0dfe206deb34d2a9c}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_a31aa73745cf259b0dfe206deb34d2a9c}} 
+\index{com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}!mBaiduMap@{mBaiduMap}}
+\index{mBaiduMap@{mBaiduMap}!com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}}
+\subsubsection{\texorpdfstring{mBaiduMap}{mBaiduMap}}
+{\footnotesize\ttfamily Baidu\+Map com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager.\+m\+Baidu\+Map = null\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ab43b42db742ecd7014645c458d5c4463}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_ab43b42db742ecd7014645c458d5c4463}} 
+\index{com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}!mOverlayList@{mOverlayList}}
+\index{mOverlayList@{mOverlayList}!com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}}
+\subsubsection{\texorpdfstring{mOverlayList}{mOverlayList}}
+{\footnotesize\ttfamily List$<$Overlay$>$ com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager.\+m\+Overlay\+List = null\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_aac09ca5b2da703be8945dd3378bd8462}\label{classcom_1_1example_1_1akisame__lin_1_1love__air2_1_1utils_1_1_overlay_manager_aac09ca5b2da703be8945dd3378bd8462}} 
+\index{com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}!mOverlayOptionList@{mOverlayOptionList}}
+\index{mOverlayOptionList@{mOverlayOptionList}!com.example.akisame\_lin.love\_air2.utils.OverlayManager@{com.example.akisame\_lin.love\_air2.utils.OverlayManager}}
+\subsubsection{\texorpdfstring{mOverlayOptionList}{mOverlayOptionList}}
+{\footnotesize\ttfamily List$<$Overlay\+Options$>$ com.\+example.\+akisame\+\_\+lin.\+love\+\_\+air2.\+utils.\+Overlay\+Manager.\+m\+Overlay\+Option\+List = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+app/src/main/java/com/example/akisame\+\_\+lin/love\+\_\+air2/utils/\mbox{\hyperlink{_overlay_manager_8java}{Overlay\+Manager.\+java}}\end{DoxyCompactItemize}
